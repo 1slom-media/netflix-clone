@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111111;
+}
+
+/* login */
+
+.login{
+    text-align: center;
+    padding-top: 200px;
+}
+.login img{
+    width: 200px;
+}
+
+.login .login_btn{
+    background-color: #fff;
+    color: #cd1820;
+    padding: 10px 45px;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.login_btn:hover{
+    background-color: #cd1820;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.fixed_navbar{
+    z-index: 999;
+    background-color: #000000e3;
+    backdrop-filter: blur(10px);
+}
+
+.company_logo img{
+    width: 100px;
+}
+
+.logout_btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.logout_btn > .user_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* banner */
+header{
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    background: linear-gradient(90deg, #070707f7 50%, transparent 75%);
+    padding: 0 35px;
+}
+
+.heading{
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.btn{
+    padding: 15px 35px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn_two{
+    background-color: #000;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+.btn_two:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.main_text{
+    width: 50%;
+    color: #fff;
+    margin-top: 35px;
+}
+
+/* categories */
+
+.categories{
+    padding: 15px;
+}
+
+.film_title{
+    color: #ffffff;
+}
+
+.films{
+    display: flex;
+    padding: 20px;
+}
+
+.film{
+    width: 100%;
+    object-fit: cover;
+    max-height: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.filmPosterLarge{
+    max-height: 250px;
+}
+.ytPlayer{
+    width: 1275px;
+    padding: 0 20px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        padding: 0 17px;
+    }
+    .main{
+        background: linear-gradient(90deg, #070707eb 47%, transparent 85%);
+        padding: 0 18px;
+    }
+    .heading{
+        font-size: 45px!important;
+    }
+    .btn{
+        padding: 15px 20px!important;
+        font-size: 17px!important;
+    }
+    .main_text{
+        width: 85%;
+        font-size: 17px;
+    }
+
+    .categories{
+        padding: 20px 15px;
+    }
+    .films{
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .ytPlayer{
+        width: 95%;
+    }
+    .filmPosterLarge{
+        max-height: 220px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .navbar{
+        padding: 0 17px;
+    }
+    .main{
+        background: linear-gradient(90deg, #070707eb 43%, transparent 85%);
+        padding: 0 18px;
+    }
+    .heading{
+        font-size: 40px!important;
+    }
+    .btn{
+        padding: 15px 20px!important;
+        font-size: 17px!important;
+    }
+    .main_text{
+        width: 80%;
+        font-size: 14px ;
+    }
+
+    .categories{
+        padding: 20px 10px;
+    }
+    .films{
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .ytPlayer{
+        width: 93%;
+    }
+    .filmPosterLarge{
+        max-height: 220px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .navbar{
+        padding: 0 17px;
+    }
+    .main{
+        background: linear-gradient(90deg, #070707eb 50%, transparent 85%);
+        padding: 0 18px;
+    }
+    .heading{
+        font-size: 40px!important;
+    }
+    .btn{
+        padding: 15px 20px!important;
+        font-size: 17px!important;
+    }
+    .main_text{
+        width: 80%;
+        font-size: 14px ;
+    }
+
+    .categories{
+        padding: 20px 10px;
+    }
+    .films{
+        padding: 10px;
+        overflow-x: scroll;
+    }
+    .ytPlayer{
+        width: 90%;
+    }
+    .filmPosterLarge{
+        max-height: 220px;
+    }
+}
